@@ -1,0 +1,914 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/pmyls/ontologies/2026/6/untitled-ontology-3/"
+     xml:base="http://www.semanticweb.org/pmyls/ontologies/2026/6/untitled-ontology-3/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:HealthcareClinicalOntology="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#admittedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#admittedTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Hospital"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#belongsToDepartment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#belongsToDepartment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Doctor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Department"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#diagnosedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#diagnosedWith">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Diagnosis"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#hasAppointment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#hasAppointment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Appointment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#hasDisease -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#hasDisease">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#hasInsurance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#hasInsurance">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Insurance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#hasMedicalRecord -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#hasMedicalRecord">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MedicalRecord"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#hasPrescription -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#hasPrescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Prescription"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#hasSymptom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#hasSymptom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Symptom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#performsTest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#performsTest">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Laboratory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MedicalTest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#prescribedMedicine -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#prescribedMedicine">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Doctor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Medicine"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#receivesTreatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#receivesTreatment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Treatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#treatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#treatedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Doctor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#usesEquipment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#usesEquipment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Surgery"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Equipment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#worksIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#worksIn"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#appointmentDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#appointmentDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Appointment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#bloodGroup -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#bloodGroup">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#diagnosisDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#diagnosisDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Diagnosis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#diseaseName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#diseaseName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Disease"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#doctorName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#doctorName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Doctor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#dosage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#dosage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Prescription"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#gender">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#hospitalName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#hospitalName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Hospital"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#insuranceID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#insuranceID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Insurance"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#medicineName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#medicineName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Medicine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#nurseName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#nurseName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Nurse"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#patientName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#patientName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#AdministrativeEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#AdministrativeEntity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Allergy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Allergy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MedicalCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Appointment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Appointment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MedicalService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Billing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Billing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#AdministrativeEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Department">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#HealthcareFacility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Diagnosis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Diagnosis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MedicalCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Disease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MedicalCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Doctor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Doctor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Equipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Equipment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MedicalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#HealthcareFacility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#HealthcareFacility"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Hospital -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Hospital">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#HealthcareFacility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Insurance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Insurance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#AdministrativeEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Laboratory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Laboratory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#HealthcareFacility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MedicalCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MedicalCondition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MedicalRecord -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MedicalRecord">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MedicalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MedicalResource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MedicalResource"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MedicalService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MedicalService"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MedicalTest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MedicalTest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MedicalService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Medicine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Medicine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MedicalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Nurse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Nurse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Pharmacy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Pharmacy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#HealthcareFacility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Prescription -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Prescription">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MedicalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Surgery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Surgery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MedicalService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Symptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Symptom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MedicalCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Treatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Treatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MedicalService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Vaccination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Vaccination">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MedicalService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Ward -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Ward">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#HealthcareFacility"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Ali -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Ali">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Patient"/>
+        <HealthcareClinicalOntology:admittedTo rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#CityHospital"/>
+        <HealthcareClinicalOntology:diagnosedWith rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Diagnosis001"/>
+        <HealthcareClinicalOntology:hasAppointment rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Appointment001"/>
+        <HealthcareClinicalOntology:hasDisease rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Diabetes"/>
+        <HealthcareClinicalOntology:hasInsurance rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Insurance001"/>
+        <HealthcareClinicalOntology:hasMedicalRecord rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Record001"/>
+        <HealthcareClinicalOntology:hasPrescription rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Prescription001"/>
+        <HealthcareClinicalOntology:hasSymptom rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Fever"/>
+        <HealthcareClinicalOntology:receivesTreatment rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Treatment001"/>
+        <HealthcareClinicalOntology:treatedBy rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#DrAhmed"/>
+        <HealthcareClinicalOntology:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</HealthcareClinicalOntology:age>
+        <HealthcareClinicalOntology:bloodGroup>O+</HealthcareClinicalOntology:bloodGroup>
+        <HealthcareClinicalOntology:gender>male</HealthcareClinicalOntology:gender>
+        <HealthcareClinicalOntology:patientName>Ali</HealthcareClinicalOntology:patientName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Appointment001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Appointment001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Appointment"/>
+        <HealthcareClinicalOntology:appointmentDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-04T10:00:00</HealthcareClinicalOntology:appointmentDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Appointment002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Appointment002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Appointment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Bill001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Bill001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Billing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Bill002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Bill002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Billing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#BloodTest -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#BloodTest">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MedicalTest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Cardiology -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Cardiology">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Department"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#CentralLab -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#CentralLab">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Laboratory"/>
+        <HealthcareClinicalOntology:performsTest rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#BloodTest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#CityHospital -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#CityHospital">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Hospital"/>
+        <HealthcareClinicalOntology:hospitalName>City Hospital</HealthcareClinicalOntology:hospitalName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Cough -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Cough">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#CovidVaccine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#CovidVaccine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Vaccination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Diabetes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Diabetes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Disease"/>
+        <HealthcareClinicalOntology:diseaseName>Diabetes</HealthcareClinicalOntology:diseaseName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Diagnosis001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Diagnosis001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Diagnosis"/>
+        <HealthcareClinicalOntology:diagnosisDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-04T09:30:00</HealthcareClinicalOntology:diagnosisDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Diagnosis002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Diagnosis002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Diagnosis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#DrAhmed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#DrAhmed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Doctor"/>
+        <HealthcareClinicalOntology:prescribedMedicine rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Insulin"/>
+        <HealthcareClinicalOntology:worksIn rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#CityHospital"/>
+        <HealthcareClinicalOntology:doctorName>Dr. Ahmed</HealthcareClinicalOntology:doctorName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#DrFatima -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#DrFatima">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Doctor"/>
+        <HealthcareClinicalOntology:belongsToDepartment rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#GeneralMedicine"/>
+        <HealthcareClinicalOntology:prescribedMedicine rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Paracetamol"/>
+        <HealthcareClinicalOntology:worksIn rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#GeneralHospital"/>
+        <HealthcareClinicalOntology:doctorName>Dr. Fatima</HealthcareClinicalOntology:doctorName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#ECGMachine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#ECGMachine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Equipment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Fever -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Fever">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Flu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Flu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#GeneralHospital -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#GeneralHospital">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Hospital"/>
+        <HealthcareClinicalOntology:hospitalName>General Hospital</HealthcareClinicalOntology:hospitalName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#GeneralMedicine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#GeneralMedicine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Department"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#HeartSurgery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#HeartSurgery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Surgery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Influenza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Influenza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Disease"/>
+        <HealthcareClinicalOntology:diseaseName>Influenza</HealthcareClinicalOntology:diseaseName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Insulin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Insulin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Medicine"/>
+        <HealthcareClinicalOntology:diseaseName>Insulin</HealthcareClinicalOntology:diseaseName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Insurance001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Insurance001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Insurance"/>
+        <HealthcareClinicalOntology:insuranceID>INS-2026-001</HealthcareClinicalOntology:insuranceID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Insurance002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Insurance002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Insurance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Lab2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Lab2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Laboratory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MainPharmacy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MainPharmacy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Pharmacy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MainPharmacy2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MainPharmacy2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Pharmacy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#NurseAyesha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#NurseAyesha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Nurse"/>
+        <HealthcareClinicalOntology:worksIn rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#CityHospital"/>
+        <HealthcareClinicalOntology:nurseName>Ayesha</HealthcareClinicalOntology:nurseName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#NurseMaria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#NurseMaria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Nurse"/>
+        <HealthcareClinicalOntology:worksIn rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#GeneralHospital"/>
+        <HealthcareClinicalOntology:nurseName>Maria</HealthcareClinicalOntology:nurseName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Paracetamol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Paracetamol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Medicine"/>
+        <HealthcareClinicalOntology:diseaseName>Paracetamol</HealthcareClinicalOntology:diseaseName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#PenicillinAllergy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#PenicillinAllergy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Allergy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Prescription001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Prescription001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Prescription"/>
+        <HealthcareClinicalOntology:dosage>1 tablet twice daily</HealthcareClinicalOntology:dosage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Prescription002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Prescription002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Prescription"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Record001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Record001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MedicalRecord"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Record002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Record002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#MedicalRecord"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Sara -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Sara">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Patient"/>
+        <HealthcareClinicalOntology:admittedTo rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#GeneralHospital"/>
+        <HealthcareClinicalOntology:diagnosedWith rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Diagnosis002"/>
+        <HealthcareClinicalOntology:hasAppointment rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Appointment002"/>
+        <HealthcareClinicalOntology:hasDisease rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Flu"/>
+        <HealthcareClinicalOntology:hasInsurance rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Insurance002"/>
+        <HealthcareClinicalOntology:hasMedicalRecord rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Record002"/>
+        <HealthcareClinicalOntology:hasPrescription rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Prescription002"/>
+        <HealthcareClinicalOntology:hasSymptom rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Cough"/>
+        <HealthcareClinicalOntology:treatedBy rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#DrFatima"/>
+        <HealthcareClinicalOntology:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</HealthcareClinicalOntology:age>
+        <HealthcareClinicalOntology:bloodGroup>A+</HealthcareClinicalOntology:bloodGroup>
+        <HealthcareClinicalOntology:gender>Female</HealthcareClinicalOntology:gender>
+        <HealthcareClinicalOntology:patientName>Sara</HealthcareClinicalOntology:patientName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Treatment001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Treatment001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Treatment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Treatment002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Treatment002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Treatment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#WardA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#WardA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Ward"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#WardB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#WardB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ayna/ontologies/2026/HealthcareClinicalOntology#Ward"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
